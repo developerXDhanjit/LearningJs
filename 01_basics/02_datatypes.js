@@ -16,7 +16,7 @@ console.log(typeof userName , userName)
 console.log(typeof userAge , userAge)
 console.log(typeof isLoggedIn , isLoggedIn)
 
-console.log(typeof null , null)
+console.log(typeof null , null) // This is quite unique
 console.log(typeof undefined , undefined);
 
 
