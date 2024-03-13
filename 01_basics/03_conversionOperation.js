@@ -1,7 +1,7 @@
-let score = "44abc"
-let score2 = null
-let score3 = undefined
-let score4 = true
+// let score = "44abc"
+// let score2 = null
+// let score3 = undefined
+// let score4 = true
 
 /*
 
@@ -53,7 +53,63 @@ conversion to boolean ->
 
 */
 
-let anyNumber = 22 
-let stringNumber = String(anyNumber)
-console.log(anyNumber, typeof anyNumber)
-console.log(stringNumber, typeof stringNumber)
+// let anyNumber = 22 
+// let stringNumber = String(anyNumber)
+// console.log(anyNumber, typeof anyNumber)
+// console.log(stringNumber, typeof stringNumber)
+
+
+
+// ############## OPERATIONS #####################
+/* Arithmetic operators :-
+add + 
+substract - 
+multiply * 
+power ** 
+divide / 
+modulus/remainder  %
+*/
+
+
+// ######### SIMPLE CODE ######### 
+
+
+/* let value = 5 
+let negativeValue = -value 
+
+console.log(negativeValue) */
+
+/* let str1 = "Hitesh "
+let str2 = "Choudhary"
+let str3 = str1 + str2 
+console.log(str3) */
+
+/* Complex situations  */
+
+/* 
+console.log(1 + "2")
+console.log("1" + "2")
+console.log("1" + 2 + 2)    //Prints 122
+console.log(1 + 2 + "2")    //Prints 32
+console.log( 3 + 4 * 5 % 3) //Not appreciated to write code like this  */
+
+// console.log(+true) //one ? 
+// console.log(true+) //error
+
+// console.log(+"") //zero ? 
+
+/* Prefix and postfix operators  */
+
+/* let gameCounter = 100 
+++gameCounter;
+console.log(gameCounter); */
+
+
+/* NOTES:
+1.Do not write confusing code in production  as mentioned above 
+2.Redability is the most important thing here dont mess your code 
+3. Prefix and postfix operator -> read in mdn https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Increment
+
+
+
+*/
