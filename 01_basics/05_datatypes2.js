@@ -20,11 +20,30 @@ console.log(id == anotherId);
 console.log(bigNumber);
 console.log(typeof bigNumber); */
 
-
-//Arrays 
+//Arrays
 
 /* const anime = ["Your Name " , " I want to eat your pancreas" , "A Silent voice " , "5 cm per second"]
-console.log(anime
+console.log(anime) */
+
+//Object
+/* let myObject = {
+    name: "Dhanjit",
+    age: 17,
+    isLoggedIn: true,
+    email: "dhanjit@gmail.com",
+}
+
+console.log(myObject) */
+
+//Function
+
+let myFunction = function () {
+  console.log("This is my function");
+};
+
+myFunction();
+
+console.log(typeof myFunction);
 
 /* Note : 
 1. Dynamically typed language vs static --> defining the type of the variable */
