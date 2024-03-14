@@ -44,4 +44,4 @@ let url = "http://example.com/test%20test.html"
 console.log(url);
 console.log(url.replace("%20", "_"));
 
-console.log(url.includes('test'))
+console.log(url.includes('test'));
