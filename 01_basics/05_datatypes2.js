@@ -47,4 +47,4 @@ console.log(typeof myFunction);
 
 /* Note : 
 1. Dynamically typed language vs static --> defining the type of the variable
-   Javascript is dynamically typed language whereas types */
+   Javascript is dynamically typed language whereas typescript is statically typed  */
