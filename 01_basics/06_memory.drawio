@@ -1,0 +1,40 @@
+<mxfile host="65bd71144e">
+    <diagram id="SggFsXXLqGzyN7w5BHUY" name="Page-1">
+        <mxGraphModel dx="562" dy="497" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="myName" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="60" y="250" width="100" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="anotherName" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="60" y="210" width="100" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="&quot;Dhan&quot;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="60" y="170" width="100" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" value="" style="edgeStyle=none;html=1;" parent="1" source="8" target="9" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="userOne" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="60" y="130" width="100" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="&lt;div style=&quot;color: rgb(190, 207, 218); background-color: rgb(1, 1, 7); font-family: &amp;quot;Droid Sans Mono&amp;quot;, &amp;quot;monospace&amp;quot;, monospace; font-size: 16px; line-height: 22px;&quot;&gt;&lt;div style=&quot;text-align: left;&quot;&gt;{&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;    name&lt;span style=&quot;font-weight: bold;&quot;&gt;:&lt;/span&gt; &lt;span style=&quot;color: #49e9a6;&quot;&gt;&quot;userOne&quot;&lt;/span&gt;&lt;span style=&quot;font-weight: bold;&quot;&gt;,&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;    email&lt;span style=&quot;font-weight: bold;&quot;&gt;:&lt;/span&gt; &lt;span style=&quot;color: #49e9a6;&quot;&gt;&quot;userOne@gmail.com&quot;&lt;/span&gt;&lt;span style=&quot;font-weight: bold;&quot;&gt;,&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;    job&lt;span style=&quot;font-weight: bold;&quot;&gt;:&lt;/span&gt;&lt;span style=&quot;color: #49e9a6;&quot;&gt;&quot;at google&quot;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;}&lt;/div&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+                    <mxGeometry x="270" y="90" width="200" height="200" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="&lt;br&gt;Stack&lt;br&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="85" y="290" width="50" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" value="Heap" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="280" y="295" width="50" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="16" value="" style="edgeStyle=none;html=1;" parent="1" source="15" target="9" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="15" value="userTwo" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="60" y="90" width="100" height="40" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
