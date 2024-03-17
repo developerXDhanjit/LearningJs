@@ -13,4 +13,4 @@ const {courseName : cName} = thisCourse
 //No errors all are doing the same job
 console.log(thisCourse);
 
-/*  */
+/* Also learnt something on json and api ... not needed to code  */
