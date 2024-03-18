@@ -71,3 +71,20 @@ const addTwo = function (params) {
 }
 
 addTwo(3) //But works fine here 
+
+/* Tr */
+
+const pi = Math.PI;
+
+function one() {
+  const sqr2 = 4;
+
+  function two() {
+    console.log(sqr2);
+    console.log(pi + " Inside ");
+  }
+  two();
+  console.log(pi + " Outside Two");
+}
+
+one();
