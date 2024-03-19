@@ -72,7 +72,7 @@ const addTwo = function (params) {
 
 addTwo(3) //But works fine here 
 
-/* Tr */
+/* Trying */
 
 const pi = Math.PI;
 
