@@ -23,5 +23,29 @@ languages.forEach(PrintMe);
 /* Parameter in this array are not just item , it conisits of item , index and the whole array */
 
 languages.forEach((item, index, arr) => {
-  console.log(item , index, arr);
+  // console.log(item , index, arr);
 });
+
+
+/* Arrays inside objects */
+
+let languageDate = [
+  {
+    langName : "Javascript", 
+    fileName : "js"
+  },
+  {
+    langName : "Ruby", 
+    fileName : "rb"
+  },
+  {
+    langName : "Python", 
+    fileName : "py"
+  }
+];
+
+
+languageDate.forEach((item)=>{
+console.log(item.langName , item.fileName);
+
+})
