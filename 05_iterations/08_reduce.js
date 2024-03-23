@@ -17,7 +17,7 @@ let reduceNums = nums.reduce((acc,curv)=> (acc+curv),initialVal)
 let shoppingCart = [
   {
     item : 'Mango',
-    price : 149
+    price : 49
   },
   {
     item : 'Apple',
@@ -42,3 +42,5 @@ let shoppingCart = [
 let totalPrice = shoppingCart.reduce((acc,item)=> acc + item.price ,0)
 
 console.log(`Total Price of the Cart is : ${totalPrice}`);
+
+/* Basics End here */
