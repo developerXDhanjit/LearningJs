@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learning DOM</title>
+    <style>
+      .bg-black {
+        background-color: #212122;
+        color: white;
+      }
+    </style>
+  </head>
+  <body class="bg-black">
+    <div class="headDiv">
+      <h1 id="mainTitle" class="mainHeading">
+        DOM manipulation
+        <span style="display: none">Text for testing</span>
+        <input type="password" name="text" id="textId" />
+      </h1>
+      <p class="firstPara">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex!
+      </p>
+
+      <ul>
+        <li class="listItem">ONE</li>
+        <li class="listItem">TWO</li>
+        <li class="listItem">THREE</li>
+        <li class="listItem">FOUR</li>
+      </ul>
+    </div>
+    <script>
+      let title = document.getElementById("mainTitle");
+      title.style.color = "red";
+      title.style.backgroundColor = "green";
+      title.style.borderRadius = "10px";
+
+      /* Learnt to manipulate styles using js  */
+      /* Difference between innerText and textContent & innerHTML */
+
+      console.log(`TEXT CONTENT : ${title.textContent}`);
+      console.log(`innerText : ${title.innerText}`);
+      console.log(`innerHTML : ${title.innerHTML}`);
+      /* InnerHTML also allows selecting html  */
+      /* className */
+
+      /* querySelector */
+
+      console.log(`QuerySelector ${document.querySelector(".headDiv")} `);
+
+      console.log(document.querySelector("h1")); //first h1
+      console.log(document.querySelector("#mainTitle")); //id
+      console.log(document.querySelector(".headDiv")); //firstClass
+
+      /* Selecting input tag with attribute */
+
+      console.log(document.querySelector('input[type="password"]'));
+
+      /* ul and li s  */
+      let myUl = document.querySelector("ul");
+      let firstLi = myUl.querySelector("li");
+      firstLi.style.backgroundColor = "green";
+      firstLi.style.color = "black";
+
+      /* QuerySelectorAll -> gives  nodelist not array  */
+
+      let myLiList = document.querySelectorAll("li");
+      // myLiList.style.color = 'black' this won't work
+      // myLiList[0].style.color = 'black' //index needs to be specified
+      myLiList.forEach((e) => {
+        e.style.color = "black";
+        e.style.backgroundColor = "green";
+      });
+
+      /* if you want to put properties of array in node list convert it at first  */
+
+      /* getElementByClassName */
+
+      let classList = document.getElementsByClassName('listItem'); 
+      // console.log(classList); //Returns HTML Collections , no forEach
+      // need to convert it to array
+
+      let newArrayLi = Array.from(classList); 
+      newArrayLi.forEach((e)=>{
+        e.style.color = 'blue'
+      })
+      
+    </script>
+  </body>
+</html>
