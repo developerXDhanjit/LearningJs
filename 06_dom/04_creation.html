@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Creating Elements using js</title>
+    <style>
+      body {
+        color: white;
+        background-color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">this is awesome</div>
+  </body>
+  <script>
+    let mainDiv = document.querySelector(".main");
+    let theDiv = document.createElement("div");
+    let awesomeText = document.createTextNode("Js Is superAwesome");
+
+    theDiv.className = "jsTalks";
+    theDiv.id = "jsId";
+
+    theDiv.append(awesomeText);
+    // theDiv.innerText = "I am Awesome while js is more awesome ";
+    theDiv.setAttribute("title", "idk");
+    theDiv.style.backgroundColor = "green";
+    document.body.appendChild(theDiv);
+    // mainDiv.append(theDiv);
+  </script>
+</html>
