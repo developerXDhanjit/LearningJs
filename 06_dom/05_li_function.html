@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>More on DOM</title>
+    <style>
+      body {
+        background-color: #212121;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <ul class="languages">
+      <li>Javascript</li>
+      <li>Python</li>
+    </ul>
+  </body>
+  <script>
+    const addLanguage = (langName) => {
+      let li = document.createElement("li");
+
+      li.innerText = langName;
+      document.querySelector(".languages").appendChild(li);
+    };
+    addLanguage("Typescript");
+
+    const addLanguageOptimum = (langName) => {
+      let li = document.createElement("li");
+      li.appendChild(document.createTextNode(langName));
+      document.querySelector(".languages").appendChild(li);
+    };
+    //This one is a better and optimized way , as the whole tree is not transversed
+    addLanguageOptimum("C++");
+
+    //Edit
+    let firstElem = document.querySelector("li:nth-child(1)");
+    // firstElem.textContent = 'Mojo'
+    let newLi = document.createElement("li");
+    newLi.textContent = "MojoGojo";
+    firstElem.replaceWith(newLi);
+
+    // Removing
+    let lastElem = document.querySelector("li:last-child");
+    // lastElem.remove();
+
+    /* For now I have the basics of DOM here ,,,  */
+  </script>
+</html>
