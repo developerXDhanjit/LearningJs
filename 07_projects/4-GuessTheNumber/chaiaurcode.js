@@ -1,4 +1,5 @@
 /* Selecting the reqr elements from dom and preparation  */
+/* Generating a random Number  */
 const randomNumber = parseInt(Math.random() * 100 + 1);
 
 const userInput = document.querySelector("#guessField");
