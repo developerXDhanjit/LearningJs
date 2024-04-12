@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browser Events </title>
+    <script defer src="01_basics.js"></script>
+    <style>
+        body {
+            background-color: #414141;
+            color: aliceblue;
+        }
+
+        img {
+            width: 244px;
+            padding: 2rem;
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Some Random Photos</h2>
+    <div class="container">
+        <ul id="images">
+            <li><img src="https://images.pexels.com/photos/276452/pexels-photo-276452.jpeg?cs=srgb&dl=pexels-pixabay-276452.jpg&fm=jpg"
+                    alt="Code" id="Coding"></li>
+            <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWVbFkokN7xPvhtwkOGdpq73rRK2FWzllRgQjbbleu9w&s"
+                    alt="coding" id="Coding2"></li>
+            <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRq69LaSIdApUf0-ivkNlPK-Fya4R3wuScOqd1JFQKDRA&s"
+                    alt="japan" id="japan"></li>
+            <li><a style="color: aliceblue;" href="https://www.google.com" target="_blank" id="google">Google </a></li>
+
+            <!-- Writing onclick inside html is not a good approach for a large scale product  -->
+        </ul>
+    </div>
+</body>
+
+</html>
