@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body style="color: white; background-color: #414141;">
+    <h2 id="mainTxt">Diving into Asyncronous JS </h2>
+
+    <button id="stop">Click to stop </button>
+    <script>
+
+        let mainTxt = document.querySelector('#mainTxt');
+        let btn = document.querySelector('#stop');
+
+        const sayMsg = () => {
+            console.log("Message in the future , 1 second after")
+        }
+
+        let changeText = () => {
+            mainTxt.innerHTML = 'This is Ultra Developer';
+            mainTxt.style.color = 'red';
+            mainTxt.style.fontSize = '2rem';
+        }
+
+        //Runs one time after the given time (in ms)
+        setTimeout(sayMsg, 1000)
+        let changeTime = setTimeout(changeText, 2000)
+
+        // Even after putting setTimeout in a variable , it doesnt stops executing
+
+        // Clear Timeout needs reference for which set Timeout
+
+        btn.addEventListener('click', function () {
+            clearTimeout(changeTime)
+            console.log(`Interval was stopped `);
+        })
+
+
+    </script>
+
+</body>
+
+</html>
