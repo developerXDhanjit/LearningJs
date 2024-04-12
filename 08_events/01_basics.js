@@ -48,7 +48,7 @@ let google = document.querySelector('#google')
 //Capturing is from top to bottom 
 //1. Code for Event bubbling 
 
-imgs.addEventListener('click', () => {
+/* imgs.addEventListener('click', () => {
     alert('Clicked inside Images')
 }, false)
 
@@ -56,7 +56,7 @@ jpic.addEventListener('click', (e) => {
     alert('Japan was Clicked')
     e.stopPropagation();
 }, false)
-
+ */
 
 //Code for Capturing 
 /* 
@@ -71,11 +71,28 @@ jpic.addEventListener('click' , ()=>{
 
 
 /* PreventDefault */
-
+/* 
 google.addEventListener('click', function (e) {
 
     e.preventDefault()
     e.stopPropagation()
     console.log("Google was clicked");
 
+}) */
+
+/* Clcking on an image will make it disappear  */
+
+imgs.addEventListener('click', (e) => {
+    //    e.target.style.display = 'none'
+    // e.target.tagName Exist
+    // picRemove.remove() 
+    if (e.target.tagName == 'IMG') {
+        let picRemove = e.target.parentNode
+        picRemove.parentNode.removeChild(picRemove);
+        
+    }
+})
+imgs.addEventListener('dblclick', (e) => {
+    e.target.style.display = 'block'
+    console.log(e.target);
 })
