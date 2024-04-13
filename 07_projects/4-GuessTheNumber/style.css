@@ -32,6 +32,18 @@ button {
   /* margin-left: 50px; */
 }
 
+#cheat {
+  background-color: #212121;
+  font-size: 1rem;
+  color: white;
+  border-radius: 2rem;
+  border: 1px solid white;
+}
+
+#cheat:hover {
+  scale: 1.3;
+}
+
 #subt {
   background-color: #161616;
   color: #ffffff;
@@ -42,7 +54,7 @@ button {
   border-style: none;
   margin-top: 50px;
   cursor: pointer;
-  
+
 }
 
 #guessField {
@@ -89,4 +101,13 @@ h1 {
 p {
   font-size: 16px;
   text-align: center;
+}
+
+/* New Game Code  */
+
+#newGame {
+  border: 2px solid white;
+  background-color: red;
+  color: yellow;
+  border-radius: 1.5rem;
 }

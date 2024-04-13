@@ -9,6 +9,7 @@ const remaining = document.querySelector(".lastResult");
 const startOver = document.querySelector(".resultParas");
 
 const lowOrHigh = document.querySelector(".lowOrHi");
+let cheatBtn = document.querySelector('#cheat')
 
 const p = document.createElement('p')
 
@@ -106,3 +107,9 @@ if (playGame) {
   });
 } else {
 }
+
+
+cheatBtn.addEventListener('click', (e) => {
+  e.preventDefault()
+  alert(`${randomNumber}`)
+})
