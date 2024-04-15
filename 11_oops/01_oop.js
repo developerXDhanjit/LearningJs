@@ -24,12 +24,20 @@ const methods = {
 
 }
 
-console.log(methods.sayHello());
+
+/* console.log(methods.sayHello());
 console.log(methods.addTwoNum(2, 4));
-console.log(methods.greetWell());
+console.log(methods.greetWell()); */
+
+
 
 /* Use of this keyword , for reference of which data , arr , obj  
 
 Will be more detailed in prototypes
 */
+
+/* Constructor is used to create different objects using some structured method */
+
+//new is a constructor func 
+//Multiple instances from the same object literal 
 
