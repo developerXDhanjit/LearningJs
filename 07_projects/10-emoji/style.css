@@ -8,11 +8,18 @@ body {
 }
 
 #emoji {
+  height: 20rem;
+  width: 20rem;
   font-size: 10rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   filter: grayscale(1);
   transition-property: transfrom, filter;
   transition-duration: 200ms;
   cursor: pointer;
+  /* background-color: crimson; */
 }
 
 #emoji:hover {
