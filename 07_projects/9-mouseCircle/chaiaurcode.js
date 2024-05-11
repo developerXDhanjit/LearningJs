@@ -12,4 +12,23 @@ const colors = [
   '#99FF99',
   '#B34D4D',
 ];
+
 // add circle to cursor and change it's color as cursor moves on the screen. Pick color from these array
+
+function cursorMove (){
+  cursor.style.left = event.clientX
+  cursor.style.top = event.clientY
+}
+window.addEventListener('mousemove' , (event)=>{
+  cursor.style.backgroundColor = colors[0]
+  document.body.style.cursor  = "none"
+  cursorMove()
+})
+
+let button = document.querySelector("button")
+console.log(button);
+
+button.addEventListener('mousemove' , (event)=>{
+  cursor.style.backgroundColor = colors[1]
+  cursorMove()
+} )

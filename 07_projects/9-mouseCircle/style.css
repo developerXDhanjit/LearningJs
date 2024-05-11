@@ -7,6 +7,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  /* cursor: none; */
 }
 
 .container {
@@ -54,3 +55,4 @@ div.cursor {
   transform: translate(-50%, -50%);
   animation: cursor 6s infinite alternate;
 }
+
