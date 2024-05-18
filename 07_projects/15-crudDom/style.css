@@ -6,7 +6,7 @@
 
 body {
   background-color: #080809;
-  background: linear-gradient(rgb(55, 43, 226), rgb(82, 5, 154));
+  background: linear-gradient(rgba(43, 163, 141, 0.751), rgb(2, 57, 36));
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -71,3 +71,4 @@ input {
   padding: 10px 20px;
   cursor: pointer;
 }
+
