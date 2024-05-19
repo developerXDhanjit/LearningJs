@@ -61,8 +61,7 @@ function RemoveBook() {
   section.forEach((element) => {
     element.addEventListener("dblclick", (event) => {
       const removableElement = event.target 
-      removableElement.style.display = "none"
-      console.log(removableElement);
+     bookList.removeChild(removableElement)
     })
   })
 }
