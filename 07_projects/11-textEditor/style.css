@@ -6,7 +6,7 @@
 
 body {
   text-align: center;
-  background-color: #ccef;
+  background-color: rgba(4, 3, 4, 0.55);
   height: 100vh;
   display: flex;
   flex-direction: column;

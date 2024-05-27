@@ -3,39 +3,39 @@ const output = document.querySelector("#output-field");
 
 let btn = document.querySelectorAll(".btn");
 
-const upperCase = document.querySelector(".uppercase");
-const lowecase = document.querySelector(".lowecase");
-const captalize = document.querySelector(".captalize");
-const bold = document.querySelector(".bold");
-const italic = document.querySelector(".italic");
-const underline = document.querySelector(".underline");
+/* Steps ? 
+ > " Knowing which button was clicked "
+ > "Taking the input of that button and also the style of that button "
+ > "on chosing that style  add that style only on the element "
+ > "show the output on clicking that button "
+*/
 
-let text = input.value;
+btn.forEach((e) => {
+  e.addEventListener("click", (event) => {
+    const style = event.target.classList[1]
+    const word = input.value
+    output.innerHTML = handleStyle(style , word)
+  })
+})
 
-/* 1. Returns the style when each button is clicked */
 
-btn.forEach((button) => {
-  button.addEventListener("click", (event) => {
-    let style = event.target.className.slice("4").trim();
-    let textOutput = handleTarget(style);
-    handleOutput(textOutput);
-  });
-});
+function handleStyle(style, word) {
 
-/* 2. Handling the style  */
-
-const handleTarget = (target) => {
-  if (target === "uppercase") {
-    return text.toUpperCase();
-  } else if (target === "lowercase") {
-    return text.toUpperCase();
-  } else {
-    alert("Feature coming soon");
-    return;
+  switch (style) {
+    case "uppercase":
+      return word.toUpperCase()
+    case "lowercase":
+      return word.toLowerCase()
+    case "bold":
+      return `<b>${word}</b>`
+    case "italic":
+      return `<i>${word}</i>`
+    case "capitalize":
+      return word.charAt(0).toUpperCase() + word.slice(1).toLowerCase();
+    case "underline":
+      return `<u>${word}</u>`
+    default:
+      return "error occured"
   }
-};
+}
 
-const handleOutput = (outputText) => {
-  output.innerHTML = outputText;
-
-};
